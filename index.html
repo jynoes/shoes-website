@@ -49,7 +49,7 @@
             NEW SEASON
           </h1>
           <h2 class="sliderPrice">$119</h2>
-          <button class="buyButton">ADD TO BAG</button>
+          <a href="#product"><button class="buyButton">ADD TO BAG</button></a>
         </div>
         <div class="sliderItem">
           <img src="./img/blob1.png" alt="" class="blob blob1" />
@@ -60,7 +60,7 @@
             NEW SEASON
           </h1>
           <h2 class="sliderPrice">$149</h2>
-          <button class="buyButton">ADD TO BAG</button>
+          <a href="#product"><button class="buyButton">ADD TO BAG</button></a>
         </div>
         <div class="sliderItem">
           <img src="./img/blob1.png" alt="" class="blob blob1" />
@@ -71,7 +71,7 @@
             NEW SEASON
           </h1>
           <h2 class="sliderPrice">$109</h2>
-          <button class="buyButton">ADD TO BAG</button>
+          <a href="#product"><button class="buyButton">ADD TO BAG</button></a>
         </div>
         <div class="sliderItem">
           <img src="./img/blob1.png" alt="" class="blob blob1" />
@@ -82,7 +82,7 @@
             NEW SEASON
           </h1>
           <h2 class="sliderPrice">$129</h2>
-          <button class="buyButton">ADD TO BAG</button>
+          <a href="#product"><button class="buyButton">ADD TO BAG</button></a>
         </div>
         <div class="sliderItem">
           <img src="./img/blob1.png" alt="" class="blob blob1" />
@@ -93,7 +93,7 @@
             NEW SEASON
           </h1>
           <h2 class="sliderPrice">$99</h2>
-          <button class="buyButton">ADD TO BAG</button>
+          <a href="#product"><button class="buyButton">ADD TO BAG</button></a>
         </div>
       </div>
     </div>
@@ -127,7 +127,7 @@
       </div>
     </div>
 
-    <div class="product">
+    <div class="product" id="product">
       <div class="productImgDiv">
         <img src="./img/air.png" alt="" class="productImg" />
       </div>
@@ -157,6 +157,52 @@
         </div>
         <button class="productButton">BUY NOW</button>
       </div>
+      <div class="payment">
+        <h1 class="payTitle">PERSONAL INFORMATION</h1>
+        <label>Full Name</label>
+        <input
+          spellcheck="false"
+          type="text"
+          placeholder="Juan de la Cruz"
+          class="payInput"
+        />
+        <label>Phone Number</label>
+        <input
+          spellcheck="false"
+          type="text"
+          placeholder="+12 34 5678"
+          class="payInput"
+        />
+        <label>Address</label>
+        <input
+          spellcheck="false"
+          type="text"
+          placeholder="Main Street, Your County, and Anytown"
+          class="payInput"
+        />
+
+        <div class="cardIcons">
+          <h1 class="payTitle">CARD INFORMATION</h1>
+          <div>
+            <img class="cardIcon" src="./img/visa.png" alt="" />
+            <img class="cardIcon" src="./img/master.png" alt="" />
+          </div>
+        </div>
+        <input
+          spellcheck="false"
+          type="password"
+          placeholder="Card Number"
+          class="payInput"
+        />
+        <div class="cardInfo">
+          <input type="text" placeholder="mm" class="payInput sm">
+          <input type="text" placeholder="yyyy" class="payInput sm">
+          <input type="text" placeholder="cvv" class="payInput sm">
+        </div>
+        <button class="payButton">CHECKOUT</button>
+        <span class="close">x</span>
+      </div>
     </div>
+
   </body>
 </html>

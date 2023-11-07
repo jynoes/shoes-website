@@ -12,7 +12,7 @@ const products = [
         img: "./img/air.png",
       },
       {
-        code: "darkblue",
+        code: "#192442",
         img: "./img/air2.png",
       },
     ],
@@ -99,5 +99,39 @@ menuItems.forEach((item, index) => {
     currentProductTitle.textContent = choosenProduct.title;
     currentProductPrice.textContent = choosenProduct.price;
     currentProductImg.src = choosenProduct.colors[0].img;
+
+    currentProductColors.forEach((color, index) => {
+      color.style.backgroundColor = choosenProduct.colors[index].code;
+    });
   });
+});
+
+currentProductColors.forEach((color, index) => {
+  color.addEventListener("click", () => {
+    currentProductImg.src = choosenProduct.colors[index].img;
+  });
+});
+
+currentProductSizes.forEach((size, index) => {
+  size.addEventListener("click", () => {
+    currentProductSizes.forEach((size) => {
+      size.style.backgroundColor = "#f5f5f5";
+      size.style.color = "#121212";
+    });
+    size.style.backgroundColor = "#121212";
+    size.style.color = "#f5f5f5";
+  });
+});
+
+const productButton = document.querySelector(".productButton");
+const payment = document.querySelector(".payment");
+const close = document.querySelector(".close");
+
+
+// Payment Window Handler
+productButton.addEventListener("click", () => {
+  payment.style.display = "flex";
+});
+close.addEventListener("click", () => {
+  payment.style.display = "none";
 });
