@@ -857,7 +857,7 @@ footer {
     right: 1rem;
   }
   .cardInfo {
-    padding-bottom: 0;
+    padding-bottom: 1rem;
   }
   .cardIcons {
     justify-content: space-between;
